@@ -34,7 +34,6 @@ public class DossierSponsoringController {
 
     @PostMapping("/addFolder")
     public DossierSponsoring addFolder(@RequestBody DossierSponsoring dossierSponsoring){
-        System.out.println(dossierSponsoring);
         return idossierSponsoringService.ajouterDossierSponsoring(dossierSponsoring);
     }
 

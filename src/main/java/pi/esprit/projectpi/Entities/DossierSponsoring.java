@@ -21,6 +21,7 @@ public class DossierSponsoring {
     int idDossier;
     String description;
 
+
     private String titre;
 
     private String publicCible;
@@ -28,7 +29,7 @@ public class DossierSponsoring {
     private String optionsPartenariat;
     private String contactCoordonnees;
 
-    @OneToMany(mappedBy = "dossier" , cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.ALL)
     Set<Pack> pack_list;
 
     @OneToOne

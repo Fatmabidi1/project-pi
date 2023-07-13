@@ -21,9 +21,11 @@ public class Pack {
     @Enumerated(EnumType.STRING)
     type_pack typePack;
     String descritpion;
+
     @ManyToOne
-            @JsonIgnore
+    @JsonIgnore
     DossierSponsoring dossier;
+
     @ManyToMany(mappedBy = "packSet")
     Set<OffreSponsoring> offreSponsoringSet;
 }
